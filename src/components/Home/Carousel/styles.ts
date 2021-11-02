@@ -6,7 +6,7 @@ interface ArrowProps {
   isSelect: number;
 }
 
-export const Container = styled.div`
+export const Container = styled.section`
   width: 100%;
   max-width: 1200px;
   height: 440px;

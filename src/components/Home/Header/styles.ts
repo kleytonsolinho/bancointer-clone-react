@@ -36,11 +36,13 @@ export const Container = styled.header<MenuProps>`
 
 export const Nav = styled.nav`
   width: 100%;
+  max-width: 1200px;
   height: 100%;
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 `;
 
 export const Menu = styled.ul`
@@ -153,8 +155,8 @@ export const HelpCenter = styled.aside`
   height: 54px;
 
   position: fixed;
-  top: 72px;
-  right: 100px;
+  top: 75px;
+  right: 2rem;
   z-index: 9;
 
   display: flex;
@@ -164,6 +166,7 @@ export const HelpCenter = styled.aside`
   background-color: var(--white);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
 `;
 

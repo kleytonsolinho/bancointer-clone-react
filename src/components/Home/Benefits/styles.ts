@@ -20,7 +20,6 @@ export const Banner = styled.div`
   height: 100%;
 
   background-image: url(${imgBanner});
-  background-size: cover;
   background-repeat: no-repeat;
   background-color: var(--background-primary);
 `;

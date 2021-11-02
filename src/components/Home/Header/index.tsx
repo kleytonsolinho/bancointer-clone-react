@@ -99,14 +99,14 @@ export default function Header({ hasScrolled }: MenuProps) {
               <FlagUS src={imgUs} alt="Bandeira dos EUA" isEnglish={isEnglish} />
             </ButtonFlag>
           </Language>
+
+          <HelpCenter>
+            <Image src={imgBabi} alt="Foto da atendente Babi" />
+            <Text>Central de Ajuda</Text>
+            <IconArrow />
+          </HelpCenter>
         </Nav>
       </Container>
-
-      <HelpCenter>
-        <Image src={imgBabi} alt="Foto da atendente Babi" />
-        <Text>Central de Ajuda</Text>
-        <IconArrow />
-      </HelpCenter>
 
       <Overlay isOpen={isOpen} onClick={handleClickMenu}>
         <SideBar isOpen={isOpen}>
