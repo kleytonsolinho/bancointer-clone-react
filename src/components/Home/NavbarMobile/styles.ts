@@ -6,7 +6,15 @@ interface LanguageProps {
   isEnglish: boolean;
 }
 
-export const Container = styled.header`
+interface MenuProps {
+  scrolled: boolean;
+}
+
+interface SideBarProps {
+  isOpen: boolean;
+}
+
+export const Container = styled.header<MenuProps>`
   width: 100%;
   height: 50px;
   padding: 0 2rem;
@@ -19,7 +27,7 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-between;
   
-  background-color: var(--white);
+  background-color: ${( props) => props.scrolled ? 'var(--primary)' : 'var(--white)'};
 `;
 
 export const Menu = styled.nav`
@@ -57,19 +65,46 @@ export const Language = styled.div`
 `;
 
 export const FlagBR = styled.img<LanguageProps>`
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 
   cursor: pointer;
 
-  opacity: ${( props => props.isEnglish ? 0.3 : 1 )}
+  opacity: ${( props => props.isEnglish ? 0.3 : 1 )};
 `;
 
 export const FlagUS = styled.img<LanguageProps>`
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   margin-left: 10px;
 
   cursor: pointer;
-  opacity: ${( props => props.isEnglish ? 1 : 0.3 )}
+  opacity: ${( props => props.isEnglish ? 1 : 0.3 )};
+`;
+
+export const Overlay = styled.div<SideBarProps>`
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  overflow: hidden;
+  
+  display: ${( props => props.isOpen ? 'block' : 'none')};
+
+  background-color: rgba(0, 0, 0, 0.4);
+`;
+
+export const SideBar = styled.div<SideBarProps>`
+  width: 320px;
+  height: 100vh;
+  margin-top: 50px;
+
+  position: relative;
+  left: 0;
+  top: 0;
+
+  background-color: var(--white);
 `;

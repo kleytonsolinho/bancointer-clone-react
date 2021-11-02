@@ -4,7 +4,12 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
   :root {
     --primary: #ff8700;
+    --primary-100: rgba(255, 135, 0, 0.5);
+    --orange-300: #fcb46d;
+    --background-primary: #fa7a01;
+    --background-cashback: #eb7000;
     --secondary: #8c91a9;
+    --gray-light: #f5f6fa;
     --gray-dark: #4b4e5c;
     --success: #8dc63f;
     --info: #17a2b8;
