@@ -36,7 +36,9 @@ export const Color = styled.div`
 `;
 
 export const Title = styled.h1`
+  max-width: 556px;
   padding: 0 2rem;
+  
   font-size: 2.5rem;
   color: var(--white);
 `;

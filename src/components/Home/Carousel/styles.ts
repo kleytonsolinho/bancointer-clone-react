@@ -9,7 +9,7 @@ interface ArrowProps {
 export const Container = styled.section`
   width: 100%;
   max-width: 1200px;
-  height: 440px;
+  height: 500px;
   margin: 0 auto;
   padding: 3rem 2rem;
 
