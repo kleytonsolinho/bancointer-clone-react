@@ -148,7 +148,7 @@ export const FlagUS = styled.img<LanguageProps>`
   opacity: ${( props => props.isEnglish ? 1 : 0.3 )};
 `;
 
-export const HelpCenter = styled.div`
+export const HelpCenter = styled.aside`
   width: 260px;
   height: 54px;
 
@@ -175,7 +175,7 @@ export const Text = styled.p`
 `;
 
 
-export const Overlay = styled.div<SideBarProps>`
+export const Overlay = styled.section<SideBarProps>`
   width: 100vw;
   height: 100vh;
 

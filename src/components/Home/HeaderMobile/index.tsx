@@ -23,7 +23,7 @@ interface MenuProps {
   hasScrolled: boolean;
 }
 
-export default function NavbarMobile({ hasScrolled }: MenuProps) {
+export default function HeaderMobile({ hasScrolled }: MenuProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isEnglish, setEnglish] = useState(false);
 

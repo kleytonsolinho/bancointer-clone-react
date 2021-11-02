@@ -31,7 +31,7 @@ interface MenuProps {
   hasScrolled: boolean;
 }
 
-export default function Navbar({ hasScrolled }: MenuProps) {
+export default function Header({ hasScrolled }: MenuProps) {
   const [isEnglish, setEnglish] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -46,10 +46,10 @@ export default function Navbar({ hasScrolled }: MenuProps) {
   return (
     <>
       <Container scrolled={hasScrolled}>
-        <Link to="/">
-          <LogoSVG scrolled={hasScrolled} />
-        </Link>
         <Nav>
+          <Link to="/">
+            <LogoSVG scrolled={hasScrolled} />
+          </Link>
           <Menu>
             <MenuItem scrolled={hasScrolled}>
               O Inter

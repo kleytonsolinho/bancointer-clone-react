@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import imgBanner from '../../../assets/images/bg-section-beneficios-desktop-xl.jpg'
 
-export const Container = styled.div`
+export const Container = styled.section`
   width: 100vw;
   height: 440px;
   margin-top: -100px;
@@ -22,6 +22,7 @@ export const Banner = styled.div`
   background-image: url(${imgBanner});
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: var(--background-primary);
 `;
 
 export const Color = styled.div`

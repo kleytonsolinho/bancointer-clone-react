@@ -11,7 +11,13 @@ export default function Benefits() {
       <Banner />
       <Color>
         <Title>
-          Conta digital gratuita, shopping nacional e internacional, investimentos, seguros, e o que mais a sua vida precisar.
+          Conta digital<br /> 
+          gratuita, shopping<br /> 
+          nacional e<br /> 
+          internacional,<br /> 
+          investimentos,<br /> 
+          seguros, e o que mais<br /> 
+          a sua vida precisar.
         </Title>
       </Color>
     </Container>

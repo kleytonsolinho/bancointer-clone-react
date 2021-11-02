@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
-import Navbar from '../../components/Home/Navbar';
-import NavbarMobile from '../../components/Home/NavbarMobile';
+import Header from '../../components/Home/Header';
+import HeaderMobile from '../../components/Home/HeaderMobile';
 import Banner from '../../components/Home/Banner';
 import Benefits from '../../components/Home/Benefits';
 import Carousel from '../../components/Home/Carousel';
@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <>
-      {isMobile ? <NavbarMobile hasScrolled={hasScrolled} /> : <Navbar hasScrolled={hasScrolled} />}
+      {isMobile ? <HeaderMobile hasScrolled={hasScrolled} /> : <Header hasScrolled={hasScrolled} />}
       <Main>
         <Banner />
         <Benefits />
