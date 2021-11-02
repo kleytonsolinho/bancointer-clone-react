@@ -102,6 +102,7 @@ export default function Header({ hasScrolled }: MenuProps) {
             </Button>
             <Button 
               type="button"
+              onClick={handleClickMenu}
               scrolled={hasScrolled}
             >
               Acessar
