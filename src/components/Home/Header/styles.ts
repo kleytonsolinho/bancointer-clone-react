@@ -13,6 +13,10 @@ interface SideBarProps {
   isOpen: boolean;
 }
 
+interface HelpCenterProps {
+  margin: number;
+}
+
 export const Container = styled.header<MenuProps>`
   width: 100%;
   height: 75px;
@@ -150,13 +154,13 @@ export const FlagUS = styled.img<LanguageProps>`
   opacity: ${( props => props.isEnglish ? 1 : 0.3 )};
 `;
 
-export const HelpCenter = styled.aside`
+export const HelpCenter = styled.aside<HelpCenterProps>`
   width: 260px;
   height: 54px;
 
   position: fixed;
   top: 75px;
-  right: 2rem;
+  right: ${(props) => props.margin}px;
   z-index: 9;
 
   display: flex;

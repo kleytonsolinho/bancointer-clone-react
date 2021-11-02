@@ -16,7 +16,7 @@ export const Container = styled.section`
 `;
 
 export const Banner = styled.div`
-  width: 60%;
+  width: 50%;
   height: 100%;
 
   background-image: url(${imgBanner});
@@ -25,12 +25,12 @@ export const Banner = styled.div`
 `;
 
 export const Color = styled.div`
-  width: 40%;
+  width: 50%;
   height: 100%;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   
   background-color: var(--background-primary);
 `;

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import LogoSVG from '../../Global/Assets/Logo';
@@ -34,6 +34,7 @@ interface MenuProps {
 export default function Header({ hasScrolled }: MenuProps) {
   const [isEnglish, setEnglish] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(0);
 
   function handleClickMenu() {
     setIsOpen(!isOpen);
@@ -42,6 +43,22 @@ export default function Header({ hasScrolled }: MenuProps) {
   function handleClickLanguage() {
     setEnglish(!isEnglish);
   }
+
+  useEffect(() => {
+    let width = window.innerWidth;
+
+    if (width <= 1200) {
+      width -= 32;
+      console.log(`Menor que 1200: ${width}`);
+    }
+
+    if (width > 1200) {
+      width = (width-1232)/2;
+      console.log(`Maior que 1200: ${width}`);
+    }
+
+    setScreenWidth(width);
+  }, [])
   
   return (
     <>
@@ -100,7 +117,7 @@ export default function Header({ hasScrolled }: MenuProps) {
             </ButtonFlag>
           </Language>
 
-          <HelpCenter>
+          <HelpCenter margin={screenWidth}>
             <Image src={imgBabi} alt="Foto da atendente Babi" />
             <Text>Central de Ajuda</Text>
             <IconArrow />
