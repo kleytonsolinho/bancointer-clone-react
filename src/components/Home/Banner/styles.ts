@@ -49,3 +49,51 @@ export const Title = styled.h1`
   white-space: nowrap;
 `;
 
+export const ShadowLayer = styled.div`
+  width: 100vw;
+  height: 100vh;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+
+  background-color: rgba(0, 0, 0, 0.3);
+`;
+
+export const Modal = styled.div`
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 11;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.8);
+
+  iframe {
+    width: 75vw; 
+    height: 75vh;
+
+    border: none;
+  }
+`;
+
+export const Close = styled.button`
+  position: absolute;
+  top: 50px;
+  right: 125px;
+
+  font-size: 2rem;
+  color: var(--white);
+
+  border: none;
+  background-color: transparent;
+`;
+
+

@@ -186,12 +186,10 @@ export const Overlay = styled.section<SideBarProps>`
   width: 100vw;
   height: 100vh;
 
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 11;
-
-  overflow: hidden;
   
   display: ${( props => props.isOpen ? 'block' : 'none')};
 
@@ -202,7 +200,7 @@ export const SideBar = styled.div<SideBarProps>`
   width: 600px;
   height: 100vh;
 
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
 
